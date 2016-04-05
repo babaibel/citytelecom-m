@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Верстка</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="css/select2.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<div class="layout">
+
+		<div class="layout__canvas js-canvas">	
+
+			<header class="header__layout">
+				<div class="header__topline ">
+					<div class="wrap cleara">
+						<div class="header__item">
+							<a href="#" class="logo">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+						<span class="mob-menu-btn js-mob-menu-btn"></span>
+					</div>
+				</div>
+			</header>
+
+			<main class="main-content__layout">
+				<div class="wrap">
+					<div class="main-content__slogan">
+						<h1 class="h1-slogan inner-page-slogan">
+							Подключите быстрый<br>
+							интернет, от 499 рублей!
+						</h1>
+						<div class="cleara">
+							<a href="#" class="fullcolor-btn">Подключиться</a>
+						</div>
+					</div>
+
+					<div class="tariff-banner">
+						<p class="tariff-banner__title">Тариф "Социальный"</p>
+						<div class="tariff-banner__options">
+							<div class="tariff-banner__options-item">
+								<img src="img/icons/speed-ico.png" alt="">
+								<span>Скорость<br>до 1 мбит/сек</span>
+							</div>
+							<div class="tariff-banner__options-item">
+								<img src="img/icons/hd-ico.png" alt="">
+								<span>До 140 каналов высокого<br>качества + HD каналы*.</span>
+							</div>
+						</div>
+						<a class="fullcolor-btn" href="#">Подключить за 99<span class="rub">c</span> в месяц</a>
+
+						<div class="hidden-info-topline js-hidden-info-topline">Показать подробности</div>
+						
+					</div>
+					<div class="hidden-info-box">
+						<p>До 140 каналов высокого качества + HD каналы*. До 140 каналов высокого<br>качества + HD каналы*. До 140 каналов высокого качества + HD каналы*.</p>
+					</div>
+
+					<div class="tariff-table__layout">
+						
+						<div class="tariff-table__slider-header">
+							<h2 class="tariff-table__h2-title"><strong>Серия "СИТИ"</strong>с помесячным списанием:</h2>
+							<div class="tariff-table__buttons">
+								<span class="tariff-table__prev-btn js-prev-btn"></span>
+								<span class="tariff-table__next-btn js-next-btn"></span>
+							</div>
+						</div>
+						<div class="tariff-table__slider">
+							<div class="tariff-table__slider-wrap">
+								<table class="tariff-table">
+									<tr class="tariff-table_title">
+										<td>Тариф "<b>СИТИ.50</b>"</td>
+										<td>Тариф "<b>СИТИ.100</b>"</td>
+										<td>Тариф "<b>СИТИ.50</b>"</td>
+										<td>Тариф "<b>СИТИ.100</b>"</td>
+									</tr>
+									<tr>
+										<td>Скорость до 50 мбит/сек</td>
+										<td>Скорость до 100 мбит/сек</td>
+										<td>Скорость до 50 мбит/сек</td>
+										<td>Скорость до 100 мбит/сек</td>
+									</tr>
+									<tr>
+										<td>До 140 каналов цифрового телевидения.</td>
+										<td>До 140 каналов цифрового телевидения.</td>
+										<td>До 140 каналов цифрового телевидения.</td>
+										<td>До 140 каналов цифрового телевидения.</td>
+									</tr>
+									<tr>
+										<td>Объём трафика не ограничен!</td>
+										<td>Объём трафика не ограничен!</td>
+										<td>Объём трафика не ограничен!</td>
+										<td>Объём трафика не ограничен!</td>
+									</tr>
+									<tr>
+										<td>Если у вас дома более 2 устройств.</td>
+										<td>Если у вас дома более 5 устройств.</td>
+										<td>Если у вас дома более 2 устройств.</td>
+										<td>Если у вас дома более 5 устройств.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="fullcolor-btn auto-height">Подключить<br>за 499<span class="rub">c</span> в месяц</a>
+										</td>
+										<td>
+											<a href="#" class="fullcolor-btn auto-height">Подключить<br>за 499<span class="rub">c</span> в месяц</a>
+											<span class="table-tip">
+												- Списание денег происходит в 00:00<br>
+												* Стоимость одного дня:<br>
+												499 р./31 день - 16.10 р.<br>
+												499 р./30 дней - 16.65 р.<br>
+												499 р./29 дней - 17.20 р.
+											</span>
+										</td>
+										<td>
+											<a href="#" class="fullcolor-btn auto-height">Подключить<br>за 499<span class="rub">c</span> в месяц</a>
+										</td>
+										<td>
+											<a href="#" class="fullcolor-btn auto-height">Подключить<br>за 499<span class="rub">c</span> в месяц</a>
+											<span class="table-tip">
+												- Списание денег происходит в 00:00<br>
+												* Стоимость одного дня:<br>
+												499 р./31 день - 16.10 р.<br>
+												499 р./30 дней - 16.65 р.<br>
+												499 р./29 дней - 17.20 р.
+											</span>
+										</td>
+									</tr>
+									<tr class="deliver-line">
+										<td>Бонусы при оплате:</td>
+										<td>Бонусы при оплате:</td>
+										<td>Бонусы при оплате:</td>
+										<td>Бонусы при оплате:</td>
+									</tr>
+									<tr class="left-text">
+										<td>
+											Цена за один месяц - 499 р.<br>
+											3 мес. (бонус 150 р.)<br>
+											6 мес. (бонус 450 р.)<br>
+											12 мес. (бонус 1200 р.)
+										</td>
+										<td>
+											Цена за один месяц - 499 р.<br>
+											3 мес. (бонус 150 р.)<br>
+											6 мес. (бонус 450 р.)<br>
+											12 мес. (бонус 1200 р.)
+										</td>
+										<td>
+											Цена за один месяц - 499 р.<br>
+											3 мес. (бонус 150 р.)<br>
+											6 мес. (бонус 450 р.)<br>
+											12 мес. (бонус 1200 р.)
+										</td>
+										<td>
+											Цена за один месяц - 499 р.<br>
+											3 мес. (бонус 150 р.)<br>
+											6 мес. (бонус 450 р.)<br>
+											12 мес. (бонус 1200 р.)
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<div class="white-text-color">
+						<h3 class="h3-title center-text">В каждый тарифный план включено:</h3>
+						<div class="icons-line includes cleara">
+							<a href="#" class="icons-line__item">
+								<span class="icons-item__image">
+									<img src="img/icons/web-ico.png" alt="">
+								</span>
+								<span class="icons-item__title">Интернет+телевидение</span>
+							</a>
+							<a href="#" class="icons-line__item">
+								<span class="icons-item__image">
+									<img src="img/icons/coins-ico.png" alt="">
+								</span>
+								<span class="icons-item__title">Беспроцентный обещанный платёж - до 5 дней.</span>
+							</a>
+							<a href="#" class="icons-line__item">
+								<span class="icons-item__image">
+									<img src="img/icons/tv-ico.png" alt="">
+								</span>
+								<span class="icons-item__title">При подключении к сети интернет вы получаете возможность *бесплатно смотреть цифровое телевидение!</span>
+							</a>
+							<a href="#" class="icons-line__item">
+								<span class="icons-item__image">
+									<img src="img/icons/city2-ico.png" alt="">
+								</span>
+								<span class="icons-item__title">Подключение для жителей многоквартирных домов производится бесплатно.</span>
+							</a>
+						</div>
+
+						<p class="small-tip">* Акция бесплатное цифровое телевидение действут с 11.11.2014 по 31.12.2015 г. **Мы принимаем заявки на подключение к Интернет в частном секторе!</p>
+					</div>
+
+					<div class="tariff-entity__layout">
+						<h3 class="h3-title white-text-color">Где найти терминалы мгновенной оплаты:</h3>
+
+						<div class="tariff-entity__container cleara">
+							<div class="tariff-entity__item first">
+								<div class="tariff-entity__item-header">Прорыв 4</div>
+								<div class="tariff-entity__item-text">
+									<p>
+										<span class="tariff-entity__item-price">590<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+							<div class="tariff-entity__item second">
+								<div class="tariff-entity__item-header">Прорыв 6</div>
+								<div class="tariff-entity__item-text">
+									<p><span class="tariff-entity__item-price">790<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+							<div class="tariff-entity__item third">
+								<div class="tariff-entity__item-header">Прорыв 8</div>
+								<div class="tariff-entity__item-text">
+									<p><span class="tariff-entity__item-price">590<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+							<div class="tariff-entity__item fourth">
+								<div class="tariff-entity__item-header">Прорыв 10</div>
+								<div class="tariff-entity__item-text">
+									<p><span class="tariff-entity__item-price">590<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+							<div class="tariff-entity__item first-line2">
+								<div class="tariff-entity__item-header">Прорыв 4</div>
+								<div class="tariff-entity__item-text">
+									<p>
+										<span class="tariff-entity__item-price">590<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+							<div class="tariff-entity__item second-line2">
+								<div class="tariff-entity__item-header">Прорыв 6</div>
+								<div class="tariff-entity__item-text">
+									<p><span class="tariff-entity__item-price">790<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+							<div class="tariff-entity__item third-line2">
+								<div class="tariff-entity__item-header">Прорыв 8</div>
+								<div class="tariff-entity__item-text">
+									<p><span class="tariff-entity__item-price">590<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+							<div class="tariff-entity__item fourth-line2">
+								<div class="tariff-entity__item-header">Прорыв 10</div>
+								<div class="tariff-entity__item-text">
+									<p><span class="tariff-entity__item-price">590<i class="rub">c</i></span> в месяц</p>
+									<p>4 Мбит/сек</p>
+									<a href="#" class="fullcolor-btn auto-height">Подключить</a>
+								</div>
+							</div>
+						</div>
+						<p class="grey-text-color">* 1 Мбит/с = 1 024 Кбит/с = 1 048 576 бит/с. Скорость свыше 30 Мбит/с рассчитывается в индивидуальном порядке.<br>
+						См. также: Архив тарифных планов ООО «Сити-Телеком»<br>
+						Подключение для юридических лиц рассчитывается в индивидуальном порядке.<br>
+						Услуга «Локальная сеть» – бесплатно<br>
+						Предоставление постоянного IPv4-адреса – 100р./месяц<br>
+						Услуга цифровой телефонии по технологии SIP – рассчитывается в индивидуальном порядке<br>
+						** Нет никаких ограничений по скачиванию информации.</p>
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer__layout">
+				<div class="wrap">
+					<p>ООО «Сити-Телеком»<br>
+					Адрес: 352932, Россия, Краснодарский край, г.Армавир, ул. Советской Армии, д. 97</p>
+					<p>Телефон: <a href="tel:+78613721096">+7 (86137) 2-10-96</a>, <a href="tel:+7 8613720484">2-04-84</a>, <a href="tel:+79885229393">+7 (988) 522-93-93</a></p>
+
+					<a href="#" class="cite-btn">Полная версия сайта</a>
+				</div>
+			</footer>
+
+			<div class="fixed-menu">
+				<div class="fixed-menu-close js-fixed-menu-close">
+					Закрыть разделы
+				</div>
+				<a href="#" class="fixed-menu-lk">
+					<span>Личный кабинет</span>
+				</a>
+				<div class="fixed-menu-wrap">
+					
+					<div class="fixed-menu-row">
+						<nav class="header__nav">
+							<ul class="main-menu cleara">
+								<li class="main-menu__item"><a href="#">Стартовая</a></li>
+								<li class="main-menu__item"><a href="#">О компании</a></li>
+								<li class="main-menu__item"><a href="#">Услуги</a></li>
+								<li class="main-menu__item"><a href="#">Цифровое ТВ</a></li>
+								<li class="main-menu__item"><a href="#">Тарифы</a></li>
+								<li class="main-menu__item"><a href="#">Акции</a></li>
+								<li class="main-menu__item"><a href="#">Оплата</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="fixed-menu-phone-row">
+						<div class="header-phone">
+							<a href="tel:+78613721096">
+								<span class="header-phone__code">+7 (86137)</span>
+								2-10-96
+							</a>
+						</div>
+						<a href="#" class="phone-row__item">Контакты</a>
+					</div>
+					<div class="fixed-menu-row">
+						<div class="header__search">
+							<form>
+								<div class="search-form">	
+									<input type="text" placeholder="Поиск..." class="search-form__field">
+									<input type="submit" class="search-form__btn">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="fixed-menu-row">
+						<div class="header__social-box">
+							<div class="social-box cleara">
+								<a href="#" class="social-box__item vk"></a>
+								<a href="#" class="social-box__item fb"></a>
+								<a href="#" class="social-box__item tw"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/js.js"></script>
+
+</body>
+</html>
