@@ -51,11 +51,31 @@ $(document).ready(function() {
 	  ]
 	});
 
+	$(function () {
+
+        if(!$('#statement-form').length) return;
+
+        $('#statement-form').submit(function(){
+			$.magnificPopup.open({
+				items: {
+					src: '#success-modal'
+				},
+				type: 'inline',
+				preloader: false,
+				focus: '#username',
+				closeBtnInside: true
+			}, 0);
+			return false;
+		});
+
+    });
+
+
 });
 
 $(function(){
 
-	var $parent = $('.tariff-table__layout');
+	var $parent = $('.tariff-table__slider1');
 	if (!$parent.length) return;
 
 	var $wr = $parent.find('.tariff-table__slider-wrap'),

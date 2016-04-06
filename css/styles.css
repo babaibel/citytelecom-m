@@ -61,12 +61,10 @@ input {
 }
 /* general style*/
 html {
-  width: 100%;
   height: 100%;
 }
 body {
   font: 14px/18px 'Roboto', sans-serif;
-  width: 100%;
   background: url(../img/bg1.jpg) no-repeat center top #1a1d2c;
   background-size: cover;
   color: #0e0e0e;
@@ -875,16 +873,21 @@ input[type="checkbox"] + label {
   color: inherit;
   cursor: pointer;
   position: relative;
-  top: 2px;
+  padding-left: 40px;
+  margin: 10px 0;
+  text-align: left;
+  display: block;
 }
 input[type="checkbox"] + label::before {
   content: "";
   display: block;
-  float: left;
   height: 22px;
   width: 22px;
-  margin: 0 7px 0 0;
+  margin-top: -11px;
   background: url(../img/icons/checkbox-bg.png) no-repeat left top;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 input[type="checkbox"]:checked + label::before {
   background-position: left bottom;
@@ -896,14 +899,8 @@ input[type="checkbox"]:checked:disabled + label::before {
   background-position: left bottom;
   opacity: 0.6;
 }
-input[type="checkbox"] + label::before {
-  display: block;
-  margin: 0 auto 20px;
-  float: none;
-}
 input[type="checkbox"] + label.agree-ckeckbox {
-  display: block;
-  text-align: center;
+  margin: 0;
 }
 .js-select-basic + .select2-container {
   display: block!important;
@@ -1148,11 +1145,11 @@ input[type="checkbox"] + label.agree-ckeckbox {
   padding-bottom: 20px;
   background: url(../img/icons/table-footer_orange-bg.jpg) repeat-x left bottom #ffd6c3;
 }
-.tariff-table:last-child tr:last-child td:nth-child(odd) {
+.tariff-table__slider:last-child .tariff-table:last-child tr:last-child td:nth-child(odd) {
   padding-bottom: 20px;
   background: url(../img/icons/table-footer_blue-bg2.png) repeat-x left bottom #e0f3ff;
 }
-.tariff-table:last-child tr:last-child td:nth-child(even) {
+.tariff-table__slider:last-child .tariff-table:last-child tr:last-child td:nth-child(even) {
   padding-bottom: 20px;
   background: url(../img/icons/table-footer_orange-bg2.png) repeat-x left bottom #ffd6c3;
 }
@@ -1362,6 +1359,27 @@ input[type="checkbox"] + label.agree-ckeckbox {
 .tariff-banner .fullcolor-btn .rub {
   font: 20px/35px "ALS Rubl";
 }
+input[type="submit"].fullcolor-btn:disabled {
+  background: #d3d3d3;
+  color: #808080;
+  border-color: #808080;
+}
+.alert-popup {
+  background: #fff none repeat scroll 0 0;
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 25px 35px;
+  position: relative;
+  text-align: left;
+}
+#success-modal .h3-title {
+  font: 400 20px/22px "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+.tariff-table__buttons {
+  display: none;
+}
 @media (max-width: 479px) {
   .wrap {
     padding: 0 10px;
@@ -1473,5 +1491,11 @@ input[type="checkbox"] + label.agree-ckeckbox {
   }
   .tariff-table__layout {
     margin: 0 -10px 30px;
+  }
+  .alert-popup {
+    max-width: 300px;
+  }
+  .tariff-table__buttons {
+    display: block;
   }
 }
